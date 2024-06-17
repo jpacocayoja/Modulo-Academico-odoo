@@ -5,9 +5,7 @@ addons-custom-local/
 *.pyc
 .user_data_uid_*
 chromedriver_*
-.venv
+.env
 xml_state.py
-nginx/nginx.conf
-filename.txt
 before*
 *.code-workspace
