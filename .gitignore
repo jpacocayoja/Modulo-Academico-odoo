@@ -3,9 +3,10 @@ __pycache__/
 .idea/
 addons-custom-local/
 *.pyc
+.env
+.venv
 .user_data_uid_*
 chromedriver_*
-.env
 xml_state.py
 before*
 *.code-workspace
