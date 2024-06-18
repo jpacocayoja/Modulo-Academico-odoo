@@ -2,14 +2,10 @@ from odoo import models, fields
 
 class Teacher(models.Model):
     _name = 'school.teacher'
-    _description = 'school.teacher'
+    _description = 'Teacher'
+    _inherits = {'hr.employee': 'employee_id'}
 
-    name = fields.Char(string='Teacher Name', required=True)
-    description = fields.Char(string='Teacher Description', required=True)
-    title = fields.Char(string='Teacher Title', required=True)
-    ci = fields.Char(string='Teacher CI', required=True)
-    cellphone = fields.Char(string='Teacher Cellphone', required=True)
-    hire_date = fields.Char(string='Teacher Hire Date', required=True)
+    employee_id = fields.Many2one('hr.employee', string='Employee', required=True, ondelete='cascade')
 
 class TeachingLoad(models.Model):
     _name = 'school.teaching.load'

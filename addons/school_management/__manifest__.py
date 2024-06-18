@@ -20,7 +20,7 @@
     'author': 'sw1',
     'website': 'http://www.yourwebsite.com',
     'category': 'Education',
-    'depends': ['base'],
+    'depends': ['base', 'hr','hr_attendance'],
     'data': [
         'security/ir.model.access.csv',
         'security/school_management_groups.xml',
@@ -35,7 +35,10 @@
         'data/infrastructure/course_data.xml', 
         'data/infrastructure/classroom_data.xml', 
         'data/infrastructure/subject_data.xml',
-        'data/students/tutor_data.xml',            
+        'data/infrastructure/cycle_data.xml',
+        'data/students/tutor_data.xml', 
+        'data/students/students_data.xml',
+        'data/teachers/teachers_data.xml',              
     ],
     'demo': [
         
