@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="school_course_1" model="school.course">
+        <field name="name">primero</field>
+        <field name="parallel">A</field>
+        <field name="level">primaria</field>
+        <field name="description"></field>
+    </record>
+
+    <record id="school_course_2" model="school.course">
+        <field name="name">primero</field>
+        <field name="parallel">B</field>
+        <field name="level">primaria</field>
+        <field name="description"></field>
+    </record>
+
+    <record id="school_course_3" model="school.course">
+        <field name="name">primero</field>
+        <field name="parallel">C</field>
+        <field name="level">primaria</field>
+        <field name="description"></field>
+    </record>
+
+    <record id="school_course_4" model="school.course">
+        <field name="name">segundo</field>
+        <field name="parallel">A</field>
+        <field name="level">primaria</field>
+        <field name="description"></field>
+    </record>
+
+    <record id="school_course_5" model="school.course">
+        <field name="name">segundo</field>
+        <field name="parallel">B</field>
+        <field name="level">primaria</field>
+        <field name="description"></field>
+    </record>
+
+    <record id="school_course_6" model="school.course">
+        <field name="name">segundo</field>
+        <field name="parallel">C</field>
+        <field name="level">primaria</field>
+        <field name="description"></field>
+    </record>
+</odoo>

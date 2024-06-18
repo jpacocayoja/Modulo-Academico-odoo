@@ -1,13 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data>
+        <!-- VISTA DE FORMULARIOS -->
+        <record model="ir.ui.view" id="view_course_form">
+            <field name="name">Course Form</field>
+            <field name="model">school.course</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name" />
+                            <field name="parallel" />
+                            <field name="level" />
+                            <field name="description" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        
+        <!-- VISTAS DE TABLAS -->
         <record model="ir.ui.view" id="view_subject_tree">
             <field name="name">School Subject List</field>
             <field name="model">school.subject</field>
             <field name="arch" type="xml">
                 <tree>
                     <field name="name" />
-                    <field name="description" />                
+                    <field name="description" />
                 </tree>
             </field>
         </record>
@@ -29,11 +49,11 @@
         <record model="ir.ui.view" id="view_classroom_tree">
             <field name="name">Classroom</field>
             <field name="model">school.classroom</field>
-            <field name="arch" type="xml">
-                <tree>
-                    <field name="name" />
-                    <field name="capacity" />
-                </tree>
+            <field name="arch" type="xml">           
+                    <tree>
+                        <field name="name" />
+                        <field name="capacity" />
+                    </tree>
             </field>
         </record>
 
@@ -45,7 +65,7 @@
                     <field name="name" />
                     <field name="parallel" />
                     <field name="level" />
-                    <field name="description"/>
+                    <field name="description" />
                 </tree>
             </field>
         </record>
@@ -61,7 +81,7 @@
                 </tree>
             </field>
         </record>
-        
+
         <record id="action_school" model="ir.actions.act_window">
             <field name="name">School</field>
             <field name="res_model">school.school</field>
@@ -92,14 +112,19 @@
             <field name="view_mode">tree,form</field>
         </record>
 
-        <menuitem id="menu_school" name="School" parent="menu_school_infrastructure" action="action_school"/>
-        <menuitem id="menu_course" name="Course" parent="menu_school_infrastructure" action="action_course"/>
-        <menuitem id="menu_classroom" name="Classroom" parent="menu_school_infrastructure" action="action_classroom"/>
-        <menuitem id="menu_subject" name="Subject" parent="menu_school_infrastructure" action="action_subject"/>
-        <menuitem id="menu_cycle" name="Cycle" parent="menu_school_infrastructure" action="action_cycle"/>        
+        <menuitem id="menu_school" name="School" parent="menu_school_infrastructure"
+            action="action_school" />
+        <menuitem id="menu_course" name="Course" parent="menu_school_infrastructure"
+            action="action_course" />
+        <menuitem id="menu_classroom" name="Classroom" parent="menu_school_infrastructure"
+            action="action_classroom" />
+        <menuitem id="menu_subject" name="Subject" parent="menu_school_infrastructure"
+            action="action_subject" />
+        <menuitem id="menu_cycle" name="Cycle" parent="menu_school_infrastructure"
+            action="action_cycle" />
     </data>
 </odoo>
-    <!-- <record id="view_classroom_form" model="ir.ui.view">
+<!-- <record id="view_classroom_form" model="ir.ui.view">
         <field name="name">school.classroom.form</field>
         <field name="model">school.classroom</field>
         <field name="arch" type="xml">
@@ -131,4 +156,34 @@
         <field name="view_mode">tree,form</field>
     </record>
 
-    <menuitem id="menu_classroom" name="Classrooms" parent="menu_school_infrastructure" action="action_classroom"/> -->
+    <menuitem id="menu_classroom" name="Classrooms" parent="menu_school_infrastructure"
+action="action_classroom"/> -->
+
+<!-- con pestañas -->
+<!-- <record model="ir.ui.view" id="view_course_form">
+            <field name="name">Course Form</field>
+            <field name="model">school.course</field>
+            <field name="arch" type="xml">
+                <form string="Course Form">
+                    <sheet>
+                        <notebook>
+                            <page string="General">
+                                <group>
+                                    <field name="name" string="Course Name" />
+                                    <field name="parallel" string="Parallel" />
+                                </group>
+                                <group>
+                                    <field name="level" string="Course Level" />
+                                </group>
+                            </page>
+                            <page string="Description">
+                                <group>
+                                    <field name="description" string="Course Description"
+                                        widget="html" />
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record> -->

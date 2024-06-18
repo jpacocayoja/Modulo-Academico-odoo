@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="school_tutor_1" model="school.tutor">
+        <field name="name">John</field>
+        <field name="last_name">Doe</field>
+        <field name="cellphone">1234567890</field>
+        <field name="email">john.doe@example.com</field>
+    </record>
+
+    <record id="school_tutor_2" model="school.tutor">
+        <field name="name">Jane</field>
+        <field name="last_name">Smith</field>
+        <field name="cellphone">0987654321</field>
+        <field name="email">jane.smith@example.com</field>
+    </record>
+
+    <record id="school_tutor_3" model="school.tutor">
+        <field name="name">Michael</field>
+        <field name="last_name">Johnson</field>
+        <field name="cellphone">1122334455</field>
+        <field name="email">michael.johnson@example.com</field>
+    </record>
+
+    <record id="school_tutor_4" model="school.tutor">
+        <field name="name">Emily</field>
+        <field name="last_name">Davis</field>
+        <field name="cellphone">2233445566</field>
+        <field name="email">emily.davis@example.com</field>
+    </record>
+
+    <record id="school_tutor_5" model="school.tutor">
+        <field name="name">Daniel</field>
+        <field name="last_name">Martinez</field>
+        <field name="cellphone">3344556677</field>
+        <field name="email">daniel.martinez@example.com</field>
+    </record>
+
+    <record id="school_tutor_6" model="school.tutor">
+        <field name="name">Olivia</field>
+        <field name="last_name">Hernandez</field>
+        <field name="cellphone">4455667788</field>
+        <field name="email">olivia.hernandez@example.com</field>
+    </record>
+
+    <record id="school_tutor_7" model="school.tutor">
+        <field name="name">Matthew</field>
+        <field name="last_name">Lopez</field>
+        <field name="cellphone">5566778899</field>
+        <field name="email">matthew.lopez@example.com</field>
+    </record>
+
+    <record id="school_tutor_8" model="school.tutor">
+        <field name="name">Sophia</field>
+        <field name="last_name">Gonzalez</field>
+        <field name="cellphone">6677889900</field>
+        <field name="email">sophia.gonzalez@example.com</field>
+    </record>
+
+    <record id="school_tutor_9" model="school.tutor">
+        <field name="name">David</field>
+        <field name="last_name">Wilson</field>
+        <field name="cellphone">7788990011</field>
+        <field name="email">david.wilson@example.com</field>
+    </record>
+
+    <record id="school_tutor_10" model="school.tutor">
+        <field name="name">Ava</field>
+        <field name="last_name">Anderson</field>
+        <field name="cellphone">8899001122</field>
+        <field name="email">ava.anderson@example.com</field>
+    </record>
+</odoo>

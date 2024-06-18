@@ -23,8 +23,13 @@ class Course(models.Model):
 
     name = fields.Char(string='Course Name', required=True)
     parallel = fields.Char(string='Course Parallel')
-    level = fields.Char(string='Course Level')
+    level = fields.Selection([
+        ('primaria', 'Primaria'),
+        ('intermedio', 'Intermedio'),
+        ('secundaria', 'Secundaria')
+    ], string='Course Level', required=True)
     description = fields.Text(string='Course Description')
+
 
 class Cycle(models.Model):
     _name = 'school.cycle'
@@ -32,7 +37,11 @@ class Cycle(models.Model):
 
     name = fields.Char(string='Cycle Name', required=True)
     description = fields.Char(string='Cycle Description')    
-    duration = fields.Selection([('bimester', 'Bimester'), ('trimester', 'Trimester')], string='Type')
+    duration = fields.Selection([
+        ('bimestre', 'Bimestre'), 
+        ('trimestre', 'Trimestre'),
+        ('semestre', 'Semestre'),
+        ('anual', 'Anual')], required=True)
 
 class Subject(models.Model):
     _name = 'school.subject'

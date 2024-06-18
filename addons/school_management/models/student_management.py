@@ -4,10 +4,15 @@ class Student(models.Model):
     _name = 'school.student'
     _description = 'Student'
 
-    name = fields.Char(string='Student Name', required=True)
-    birthdate = fields.Date(string='Birthdate')
-    cellphone = fields.Char(string='Cellphone')
+    name = fields.Char(string='Name', required=True)
+    lastname = fields.Char(string='Last Name', required=True)
+    birthdate = fields.Date(string='Birthdate', required=True)
+    gender = fields.Selection([
+        ('masculino', 'Masculino'),
+        ('femenino', 'Femenino')
+    ], string='Gender', required=True)
     ci = fields.Char(string='CI')
+    cellphone = fields.Char(string='Cellphone')
     tutor_principal = fields.Many2one('school.tutor', string='Tutor')
     tutor_secundary = fields.Many2one('school.tutor', string='Tutor Secundario')
     enrollment_ids = fields.One2many('school.enrollment', 'student_id', string='Enrollments')
@@ -16,10 +21,10 @@ class Tutor(models.Model):
     _name = 'school.tutor'
     _description = 'Tutor'
 
-    name = fields.Char(string='Tutor Name', required=True)
-    last_name = fields.Char(string='Tutor Last Name', required=True)
-    cellphone = fields.Char(string='Tutor cellphone', required=True)
-    email = fields.Char(string='Tutor Email', required=True)
+    name = fields.Char(string='Name', required=True)
+    last_name = fields.Char(string=' Last Name', required=True)
+    cellphone = fields.Char(string=' cellphone', required=True)
+    email = fields.Char(string=' Email', required=True)
 
 class Enrollment(models.Model):
     _name = 'school.enrollment'

@@ -1,17 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data>
+        <!-- VISTA DE FORMULARIOS -->
+        <record model="ir.ui.view" id="view_student_form">
+            <field name="name">school list form</field>
+            <field name="model">school.student</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <notebook>
+                            <page string="Student">
+                                <group>
+                                    <field name="name" />
+                                    <field name="lastname" />
+                                    <field name="birthdate" class="oe_inline" style="width: 200px;"/>
+                                    <field name="gender" class="oe_inline" style="width: 200px;" />
+                                    <field name="ci" />
+                                    <field name="cellphone" />
+                                </group>
+                            </page>
+                            <page string="Tutor">
+                                <group>
+                                    <field name="tutor_principal" />
+                                    <field name="tutor_secundary" />
+                                </group>
+                            </page>
+                        </notebook>
+
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <!-- VISTAS DE TABLAS -->
         <record model="ir.ui.view" id="view_student_tree">
             <field name="name">school list</field>
             <field name="model">school.student</field>
             <field name="arch" type="xml">
                 <tree>
-                    <field name="birthdate" />
-                    <field name="ci" />
                     <field name="name" />
+                    <field name="lastname" />
+                    <field name="birthdate" />
+                    <field name="gender"/>
+                    <field name="ci" />
                     <field name="cellphone" />
-                    <field name="tutor_principal" />
-                    <field name="tutor_secundary" />
+                    <!-- <field name="tutor_principal" />
+                    <field name="tutor_secundary" /> -->
                 </tree>
             </field>
         </record>
@@ -42,7 +77,7 @@
         </record>
 
         <record id="action_student" model="ir.actions.act_window">
-            <field name="name">Students</field>
+            <field name="name">Estudiantes</field>
             <field name="res_model">school.student</field>
             <field name="view_mode">tree,form</field>
         </record>
@@ -59,12 +94,15 @@
             <field name="view_mode">tree,form</field>
         </record>
 
-        <menuitem id="menu_student" name="Students" parent="menu_student_management" action="action_student"/>
-        <menuitem id="menu_tutor" name="Tutor" parent="menu_student_management" action="action_tutor"/>
-        <menuitem id="menu_enrollment" name="Enrollment" parent="menu_student_management" action="action_enrollment"/>
+        <menuitem id="menu_student" name="Students" parent="menu_student_management"
+            action="action_student" />
+        <menuitem id="menu_tutor" name="Tutor" parent="menu_student_management"
+            action="action_tutor" />
+        <menuitem id="menu_enrollment" name="Enrollment" parent="menu_student_management"
+            action="action_enrollment" />
     </data>
 </odoo>
-    <!-- <record id="view_student_form" model="ir.ui.view">
+<!-- <record id="view_student_form" model="ir.ui.view">
         <field name="name">school.student.form</field>
         <field name="model">school.student</field>
         <field name="arch" type="xml">
@@ -97,6 +135,6 @@
         <field name="view_mode">tree,form</field>
     </record>-->
 
-    
-    <!-- <menuitem id="menu_student" name="Students" parent="menu_student_management" action="action_student"/>  -->
 
+<!-- <menuitem id="menu_student" name="Students" parent="menu_student_management"
+action="action_student"/>  -->

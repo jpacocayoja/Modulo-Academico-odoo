@@ -32,11 +32,13 @@
         'views/student_management_views.xml',
         'views/payment_management_views.xml',
         'views/grades_management_views.xml',        
-        'data/school_infrastructure_data.xml',
-        'data/school_infrastructure_demo.xml',     
+        'data/infrastructure/course_data.xml', 
+        'data/infrastructure/classroom_data.xml', 
+        'data/infrastructure/subject_data.xml',
+        'data/students/tutor_data.xml',            
     ],
     'demo': [
-        'data/school_infrastructure_demo.xml',
+        
     ],
     'installable': True,
     'application': True,
