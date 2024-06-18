@@ -16,8 +16,8 @@ class profesor(models.Model):
      grado = fields.Selection(
         [
             ("basico","Basico"),
-            ("primaria","Primaria"),
-            ("secundaria","Secundaria"),
+            ("primaria","primaria"),
+            ("secundaria","secundaria"),
         ],
         string = "Grado",
         default = "primaria",

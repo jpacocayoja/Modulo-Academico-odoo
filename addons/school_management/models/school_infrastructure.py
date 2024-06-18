@@ -24,9 +24,9 @@ class Course(models.Model):
     name = fields.Char(string='Course Name', required=True)
     parallel = fields.Char(string='Course Parallel')
     level = fields.Selection([
-        ('primaria', 'Primaria'),
+        ('primaria', 'primaria'),
         ('intermedio', 'Intermedio'),
-        ('secundaria', 'Secundaria')
+        ('secundaria', 'secundaria')
     ], string='Course Level', required=True)
     description = fields.Text(string='Course Description')
 

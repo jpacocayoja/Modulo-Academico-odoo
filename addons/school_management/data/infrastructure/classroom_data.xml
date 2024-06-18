@@ -41,4 +41,24 @@
         <field name="name">aula 10</field>
         <field name="capacity">34</field>
     </record>
+    <record id="school_classroom_11" model="school.classroom">
+        <field name="name">aula 11</field>
+        <field name="capacity">30</field>
+    </record>
+    <record id="school_classroom_12" model="school.classroom">
+        <field name="name">aula 12</field>
+        <field name="capacity">29</field>
+    </record>
+    <record id="school_classroom_13" model="school.classroom">
+        <field name="name">aula 13</field>
+        <field name="capacity">50</field>
+    </record>
+    <record id="school_classroom_14" model="school.classroom">
+        <field name="name">aula 14</field>
+        <field name="capacity">36</field>
+    </record>
+    <record id="school_classroom_15" model="school.classroom">
+        <field name="name">aula 15</field>
+        <field name="capacity">29</field>
+    </record>
 </odoo>
