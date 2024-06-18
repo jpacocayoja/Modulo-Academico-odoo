@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <!-- Materia: Matemáticas -->
+    <data >  
+        <!-- Materia: Matemáticas -->
     <record id="school_subject_1" model="school.subject">
         <field name="name">Matemáticas</field>
         <field name="description">Estudio de los números, las estructuras, el espacio y el cambio.</field>
@@ -59,4 +60,5 @@
         <field name="name">Educación Física</field>
         <field name="description">Desarrollo de habilidades físicas, deportes y la importancia del ejercicio para la salud.</field>
     </record>
+    </data>  
 </odoo>

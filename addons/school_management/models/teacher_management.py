@@ -15,4 +15,4 @@ class TeachingLoad(models.Model):
     subject_id = fields.Many2one('school.subject', string='Subject', required=True)
     hours_per_week = fields.Integer(string='Hours per Week', required=True)
     hours_total = fields.Integer(string='Hours total', required=True)    
-    schedule_id = fields.Many2one('school.schedule', string='Schedule')
+    # schedule_id = fields.Many2one('school.schedule', string='Schedule')

@@ -4,7 +4,6 @@ access_school_course,access_school_course,model_school_course,,1,1,1,1
 access_school_cycle,access_school_cycle,model_school_cycle,,1,1,1,1
 access_school_subject,access_school_subject,model_school_subject,,1,1,1,1
 access_school_schedule,access_school_schedule,model_school_schedule,,1,1,1,1
-access_school_schedule_course,access_school_schedule_course,model_school_schedule_course,,1,1,1,1
 access_school_teacher,access_school_teacher,model_school_teacher,,1,1,1,1
 access_school_teaching_load,access_school_teaching_load,model_school_teaching_load,,1,1,1,1
 access_school_student,access_school_student,model_school_student,,1,1,1,1
